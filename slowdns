@@ -33,7 +33,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ──              @PowerMX             
         echo "Not Installed"
     fi
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
-    echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS SSL"
+    echo -e "${YELLOW}[${GREEN}01${YELLOW}]${WHITE} | Install SlowDNS"
     echo -e "${YELLOW}[${GREEN}02${YELLOW}]${WHITE} | See information"
     echo -e "${YELLOW}[${GREEN}03${YELLOW}]${WHITE} | Start SlowDNS"
     echo -e "${YELLOW}[${GREEN}04${YELLOW}]${WHITE} | RESTART SlowDNS"
