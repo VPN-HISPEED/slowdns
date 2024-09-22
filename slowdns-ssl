@@ -56,23 +56,6 @@ echo -e "         \033[1;33mInstaller made by @Laael and Mod VpsPack \033[1;37m"
 echo -e ""
 echo -e "${GRAY}[${RED}-${GRAY}]${RED} ───────────────── /// ────────────────── ${YELLOW}"
 echo ""
-echo -e "UPDATING PACKAGE LIST..."
-fun_att () {
-apt update && apt upgrade -y
-}
-fun_bar 'fun_att'
-echo -e "INSTALLING AND UPDATING REQUIRED PACKAGES..."
-install_pkgs () {
-apt install screen -y
-apt install cron -y
-apt install iptables -y
-service cron reload
-service cron restart
-service iptables reload
-service iptables restart
-}
-fun_bar 'install_pkgs'
-echo ""
 echo -e "CONFIGURING IPTABLES..."
 ipt_set () {
 cd /etc
