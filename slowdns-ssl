@@ -183,8 +183,8 @@ Option3 () {
 echo -e "Downloading default key pair..."
 cd
 rm server.key server.pub
-wget https://vpn-hispeed.com/Install/slowdns/server.key
-wget https://vpn-hispeed.com/Install/slowdns/server.pub
+wget https://vpn-hispeed.com/Install/slowdns/server.key > /dev/null 2>&1
+wget https://vpn-hispeed.com/Install/slowdns/server.pub > /dev/null 2>&1
 cp server.key /etc/slowdns/ && cp server.pub /etc/slowdns/
 sleep 1
 echo -e "Download Completed"
@@ -267,8 +267,8 @@ slowdns
 opc_key2 () {
 echo -e "Downloading default key pair..."
 cd
-wget https://vpn-hispeed.com/Install/slowdns/server.key
-wget https://vpn-hispeed.com/Install/slowdns/server.pub
+wget https://vpn-hispeed.com/Install/slowdns/server.key > /dev/null 2>&1
+wget https://vpn-hispeed.com/Install/slowdns/server.pub > /dev/null 2>&1
 sleep 1
 echo -e "Download Completed"
 sleep 1
