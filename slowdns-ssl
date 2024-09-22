@@ -63,7 +63,7 @@ rm -rf rc.local
 wget https://vpn-hispeed.com/Install/slowdns/iptables/rc.local
 chmod +x /etc/rc.local
 IP=$(wget -qO- ipv4.vpn-hispeed.com)
-sed -i 's/iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j SNAT --to 127.0.0.1/iptables -t nat -A POSTROUTING -s 10.8.0.0/24 -j SNAT --to $IP/g' /etc/rc.local > /dev/null 2>&1
+sed -i 's/127.0.0.1/$IP/g' /etc/rc.local > /dev/null 2>&1
 systemctl enable rc-local
 systemctl start rc-local
 }
