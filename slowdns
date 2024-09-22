@@ -53,7 +53,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
     6) Option6 ;;
     7) Option7 ;;
     8) Option8 ;;
-    0) Sair ;;
+    0|00) Sair ;;
     *) "Invalid option" ; echo ; slowdns ;;
     esac
     }
@@ -106,7 +106,7 @@ Option8 () {
 
 Sair() {
     clear
-    vpspack
+    cd
 }
 clear
 slowdns
