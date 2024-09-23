@@ -185,7 +185,7 @@ cd
 rm server.key server.pub
 wget https://vpn-hispeed.com/Install/slowdns/server.key > /dev/null 2>&1
 wget https://vpn-hispeed.com/Install/slowdns/server.pub > /dev/null 2>&1
-cp server.key /etc/slowdns/ && cp server.pub /etc/slowdns/ > /dev/null 2>&1
+cp server.key /etc/slowdns/ && cp server.pub /etc/slowdns/
 sleep 1
 echo -e "Download Completed"
 sleep 1
