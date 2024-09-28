@@ -58,7 +58,7 @@ echo -e "${GRAY}[${RED}-${GRAY}]${RED} ─────────────�
 
 Option1 () {
     clear
-    bash /etc/slowdns/slowdns-ssl
+    bash /etc/slowdns/slowdns-install
 }
 
 Option2 () {
